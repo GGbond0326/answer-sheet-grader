@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "answer-sheet-grader"
+version = "1.0.0"
+description = "GUI answer sheet grading tool for pencil bubble sheets"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Answer Sheet Grader Contributors"}
+]
+dependencies = [
+  "opencv-python",
+  "numpy",
+  "pillow"
+]
+
+[tool.setuptools]
+py-modules = ["app"]
